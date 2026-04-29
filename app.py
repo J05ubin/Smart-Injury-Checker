@@ -1,6 +1,4 @@
 import os
-import cv2
-import numpy as np
 import json
 import google.generativeai as genai
 from PIL import Image
