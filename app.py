@@ -77,16 +77,12 @@ def predict_image():
     if file.filename == '':
         return jsonify({'error': 'No image selected'})
         
-    filename = secure_filename(file.filename)
-    filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-    file.save(filepath)
-    
     # Use Gemini Vision API
     if not os.getenv("GEMINI_API_KEY") or os.getenv("GEMINI_API_KEY") == "your_api_key_here":
         return jsonify({'error': 'Gemini API Key missing. Please configure .env file.'})
         
     try:
-        img = Image.open(filepath)
+        img = Image.open(file)
         
         prompt = """
         You are an expert AI medical assistant. Examine this image of a potential injury.
@@ -107,4 +103,4 @@ def predict_image():
         return jsonify({'error': str(e)})
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(host='0.0.0.0', debug=True, port=5000)
