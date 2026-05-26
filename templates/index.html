@@ -1,25 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Injury Checker | Dual Mode Assessment</title>
-    <meta name="description" content="AI-assisted injury evaluation using symptom checking and image analysis.">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Theme Toggle -->
     <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
         <i class="fas fa-moon"></i>
     </button>
 
     <div class="container">
-        <!-- Hero Section -->
         <header class="hero">
             <div class="hero-content">
                 <div class="logo">
@@ -82,21 +74,19 @@
                     </button>
                 </div>
 
-                <!-- Image Analysis Result -->
                 <div class="result-card hidden" id="image-result">
                     <div class="loading-overlay hidden" id="image-loading">
                         <div class="spinner"></div>
                         <p>Analyzing pixels...</p>
                     </div>
                     <div class="result-content" id="image-result-content">
-                        <!-- Injected result -->
                     </div>
                 </div>
             </section>
         </div>
 
         <!-- Future Scope Section -->
-        <section class="future-scope card">
+        <!-- <section class="future-scope card">
             <h2><i class="fas fa-rocket"></i> Future Enhancements</h2>
             <div class="scope-grid">
                 <div class="scope-item">
@@ -115,7 +105,7 @@
                     <p>Automatic detection and routing to the nearest ER or urgent care.</p>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <footer>
             <p>&copy; 2026 Smart Injury Checker. For demonstrative purposes only.</p>
