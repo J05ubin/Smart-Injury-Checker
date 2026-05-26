@@ -79,7 +79,6 @@ body {
     padding: 2rem;
 }
 
-/* Hero Section */
 .hero {
     text-align: center;
     padding: 3rem 0;
@@ -142,7 +141,6 @@ body {
     gap: 0.5rem;
 }
 
-/* Main Layout */
 .main-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -189,7 +187,6 @@ body {
     margin-top: 0.25rem;
 }
 
-/* Buttons */
 .btn {
     padding: 0.75rem 1.5rem;
     border-radius: var(--radius);
@@ -249,7 +246,6 @@ body {
     background: rgba(2, 132, 199, 0.05);
 }
 
-/* Chat Module */
 .chat-container {
     height: 350px;
     overflow-y: auto;
@@ -317,7 +313,6 @@ input[type="range"] {
     accent-color: var(--primary);
 }
 
-/* Image Upload Module */
 .upload-container {
     border: 2px dashed var(--border);
     border-radius: var(--radius);
@@ -379,7 +374,6 @@ input[type="range"] {
     flex: 1;
 }
 
-/* Results Formatting */
 .result-card {
     margin-top: 1.5rem;
     padding: 1.5rem;
@@ -412,7 +406,6 @@ input[type="range"] {
     font-size: 0.95rem;
 }
 
-/* Loading */
 .loading-overlay {
     position: absolute;
     top: 0;
@@ -442,7 +435,6 @@ input[type="range"] {
     to { transform: rotate(360deg); }
 }
 
-/* Future Scope */
 .future-scope {
     margin-top: 2rem;
 }
